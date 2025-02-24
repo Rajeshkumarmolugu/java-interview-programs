@@ -1,4 +1,4 @@
-package learnings.src;
+package learnings.src.list;
 
 public class FindShortNumber {
     public static void main(String[] args) {
