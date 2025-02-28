@@ -6,7 +6,7 @@ import java.util.*;
 public class LongestPalindromeSubstring {
 
     public static void main(String[] args) {
-        String s = "babaab";
+        String s = "babaabaab";
         int n = s.length();
         System.out.println(isPalindrome(s));
         HashSet<String> subStrList = new HashSet<>();
@@ -21,6 +21,14 @@ public class LongestPalindromeSubstring {
             }
         }
         System.out.println("list of Palindrome Substrings : " + subStrList);
+
+        String maxLength = "";
+        for(String s1  : subStrList) {
+           if (s1.length() > maxLength.length() ){
+               maxLength = s1;
+            }
+        }
+        System.out.println("Longest Palindrome Substring is " + maxLength);
 
     }
 
