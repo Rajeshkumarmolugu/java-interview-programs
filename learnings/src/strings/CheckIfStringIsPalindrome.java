@@ -1,4 +1,4 @@
-package learnings.src;
+package learnings.src.strings;
 
 public class CheckIfStringIsPalindrome {
     public static void main(String[] args) {

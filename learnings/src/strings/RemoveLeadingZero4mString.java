@@ -2,7 +2,7 @@ package learnings.src.strings;
 
 public class RemoveLeadingZero4mString {
     public static void main(String[] args) {
-        String s = "00000000000002323232";
+        String s = "00000000000002323000232";
         StringBuilder sb = new StringBuilder();
 
         //using String Builder

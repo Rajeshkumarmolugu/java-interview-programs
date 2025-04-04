@@ -7,7 +7,7 @@ public class PrimeNumbersOfList {
     public static void main(String[] args) {
         ArrayList<Integer> al = new ArrayList<>(Arrays.asList(2,3,4,5,6,7));
 
-        al.stream().filter(PrimeNumbersOfList::isPrime).map(a->a*a).forEach(System.out::println);
+        al.stream().filter(PrimeNumbersOfList::isPrime).forEach(System.out::println);
 
     }
     public static boolean isPrime(Integer n){

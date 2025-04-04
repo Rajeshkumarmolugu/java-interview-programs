@@ -1,4 +1,4 @@
-package learnings.src;
+package learnings.src.strings;
 
 import java.util.ArrayList;
 import java.util.Comparator;

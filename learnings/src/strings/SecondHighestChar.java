@@ -1,15 +1,24 @@
-package learnings.src;//package com.nerchuko.lessThanjava8;
+package learnings.src.strings;//package com.nerchuko.lessThanjava8;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class SecondHighestChar {
     public static void main(String[] args) {
         String str = "hello world";
-        findSecondHighestChar(str);
+        Map<Character,Integer> m = new HashMap<>();
+        for(char c : str.toCharArray()){
+            if(c != ' ')
+            m.put(c,m.getOrDefault(c,0)+1);
+        }
+
+        List<Map.Entry<Character, Integer>> list = new ArrayList<>(m.entrySet());
+        list.sort((a,b)->b.getValue().compareTo(a.getValue()));
+
+        System.out.println(list.get(0).getKey() + " = " + list.get(0).getValue());
+        //findSecondHighestChar(str);
     }
+
+
 
     public static void findSecondHighestChar(String str) {
         // Step 1: Count occurrences of each character

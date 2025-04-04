@@ -1,15 +1,16 @@
 package learnings.src.list;
 
+import java.util.Arrays;
+
 public class FindShortNumber {
     public static void main(String[] args) {
         int[] num = {23,24,5,6,12,3,4};
-        int temp = num[0];
 
-        for(int i=1; i<num.length;i++){
-            if(num[i] < temp){
-                temp = num[i];
-            }
+        Integer[] nums = new Integer[num.length];
+        for(int i=0;i<num.length;i++){
+            nums[i]=num[i];
         }
-        System.out.println("Smallest number is " + temp);
+        System.out.println(Arrays.stream(nums).min(Integer::compare).get());
+        //System.out.println("Smallest number is " + temp);
     }
 }

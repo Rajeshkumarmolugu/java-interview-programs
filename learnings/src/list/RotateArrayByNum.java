@@ -1,4 +1,4 @@
-package learnings.src;
+package learnings.src.list;
 
 import java.util.Arrays;
 

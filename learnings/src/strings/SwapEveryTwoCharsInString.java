@@ -10,6 +10,10 @@ public class SwapEveryTwoCharsInString {
             sb.append(s.charAt(i));
         }
 
+        //if string is not even length append the last char to end
+        if(s.length() % 2 != 0) {
+            sb.append(s.charAt(s.length() - 1));
+        }
         System.out.println(sb.toString());
     }
 }

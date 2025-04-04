@@ -1,4 +1,4 @@
-package learnings.src;
+package learnings.src.numbers;
 
 import java.util.stream.LongStream;
 

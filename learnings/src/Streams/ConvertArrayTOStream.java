@@ -2,6 +2,7 @@ package learnings.src.Streams;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class ConvertArrayTOStream {
@@ -17,5 +18,6 @@ public class ConvertArrayTOStream {
 
         //converting integer[] to arrayList
         ArrayList<Integer> al = new ArrayList<>(Arrays.asList(nums));
+        al.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
     }
 }

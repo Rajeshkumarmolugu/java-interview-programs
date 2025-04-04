@@ -11,8 +11,10 @@ public class CountOccurancesOfEachWord {
     public static void main(String[] args) {
         ArrayList<String> al = new ArrayList<>(Arrays.asList("rajesh","rakesh","rakesh","temp"));
 
-        Map<String,Long> countMap = al.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-        System.out.println(countMap);
+        Map<String,Long> countMap = al.stream().
+                collect(Collectors.
+                        groupingBy(Function.identity(),Collectors.counting()));
+        System.out.println(countMap );
 
     }
 }

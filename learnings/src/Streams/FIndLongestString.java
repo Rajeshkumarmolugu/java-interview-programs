@@ -7,7 +7,7 @@ import java.util.OptionalInt;
 
 public class FIndLongestString {
     public static void main(String[] args) {
-        ArrayList<String> al = new ArrayList<>(Arrays.asList("rajesh","kumar","rakesh","temp"));
+        ArrayList<String> al = new ArrayList<>(Arrays.asList("kkkk","kumar","rakesh","temp"));
 
         //to find length
         System.out.println(al.stream().map(a->a.length()).findFirst().get());

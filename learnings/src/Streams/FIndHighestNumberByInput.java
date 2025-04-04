@@ -12,7 +12,7 @@ public class FIndHighestNumberByInput {
         ArrayList<Integer> al = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9));
         int input = 5; //means find 5th highest number
 
-        Integer fifthHighest = al.stream().sorted(Comparator.reverseOrder()).skip(input-1).findFirst().get();
+        Integer fifthHighest = al.stream().sorted(Comparator.reverseOrder()).skip(input-1  ).findFirst().get();
 
         System.out.println(fifthHighest);
     }
