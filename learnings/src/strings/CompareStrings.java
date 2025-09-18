@@ -8,6 +8,7 @@ public class CompareStrings {
 
         System.out.println(s.equals(s1));
         System.out.println(s.equals(s2));
+        System.out.println(s==s1);
         System.out.println(s.equalsIgnoreCase(s2));
         System.out.println(s.compareTo(s2));
     }

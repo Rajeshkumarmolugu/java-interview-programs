@@ -2,7 +2,11 @@ package learnings.src.numbers;
 
 public class FibonacciSeries {
     public static void main(String[] args) {
-        System.out.println(F(11));
+        int n =11;
+        for(int i=0;i<=n;i++){
+            System.out.print(F(i) + " ");
+        }
+
 
     }
 

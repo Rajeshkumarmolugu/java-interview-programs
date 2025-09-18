@@ -9,6 +9,6 @@ public class CheckIfListContainGivenNum {
         int givenNum = 20;
 
         //check if list contains greater than giver num
-        System.out.println(al.stream().anyMatch(a->a>givenNum));
+        System.out.println(al.stream().anyMatch(a->a==givenNum));
     }
 }
